@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Bonsai Pi - Bodenfeuchte</title>
+    <meta http-equiv="refresh" content="60" />
+  </head>
+
+<body>
+    <center><b><h1>Bonsai Pi - Bodenfeuchte</h1></b></br>
+    <script type='text/javascript'>
+        var Datum = new Date();
+        var Tag = Datum.getDate();
+        var Monat = Datum.getMonth() + 1;
+        var Jahr = Datum.getFullYear();
+        var Stunden = Datum.getHours();
+        var Minuten = Datum.getMinutes();
+        if (Minuten <10)
+        {
+                Minuten= "0" + String(Minuten); // 0 einfuegen, falls Minuten <10
+        }
+        document.write(Tag + "." + Monat + "." + Jahr + " - " + Stunden + ":" + Minuten + " Uhr");
+    </script>
+    <br><br><br>
+    <img src="graphs/humi.png"></br>
+    <br><br>
+    <img src="graphs/humi_week.png"></br>
+
+
+    </center>
+</body>
+</html>
