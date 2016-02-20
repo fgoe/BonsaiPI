@@ -71,6 +71,8 @@ elif 1.3 <= volt < 1.82:
    VWC = 48.08*volt-47.5
 elif 1.82 <= volt < 2.2:
    VWC = 26.32*volt-7.89
+elif 2.2 <= volt < 3.0:
+   VWC = 77
 print ("VWC:  %.3f" % VWC)
 
 #write value to file in /tmp
